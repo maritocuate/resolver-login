@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 const express = require("express");
 const { ClerkExpressRequireAuth } = require("@clerk/clerk-sdk-node");
 const cors = require("cors");
@@ -20,10 +21,12 @@ app.get("/api/check-auth", ClerkExpressRequireAuth(), (req, res) => {
 
 // Ruta pública para la página de inicio
 app.get("/", (req, res) => {
-  res.send("Servidor de autenticación funcionando ✅");
+  res.send("Server working");
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
+module.exports = app;

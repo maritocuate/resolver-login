@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-  res.send("Server working ✅");
+  res.send("API funcionando ✅");
 };

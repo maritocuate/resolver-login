@@ -8,12 +8,12 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/api/index"
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     },
     {
-      "src": "/api/check-auth",
-      "dest": "/api/check-auth"
+      "src": "/",
+      "dest": "/api/index"
     }
   ]
 }

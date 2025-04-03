@@ -14,5 +14,8 @@
     "@clerk/clerk-sdk-node": "^4.13.23",
     "dotenv": "^16.4.7",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "vercel": "^41.4.1"
   }
 }
